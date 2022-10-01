@@ -2,6 +2,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.container {
+    max-width: 1170px;
+}
 /*top*/
 .top-header {
     position: relative; 
@@ -266,6 +269,7 @@ section.footer {
 
 .mini-icon {
     padding: 0 5px;
+    cursor: pointer;
 }
 .mini-icon img{
     max-height: 21px;
@@ -278,7 +282,7 @@ section.footer {
 }
 .header-group-icon {
     position: absolute;
-    right: 30px;
+    right: 20px;
 }
 .line-clear-item-footer {
     height: 2px;
@@ -366,35 +370,67 @@ section.footer-bottom {
     margin-bottom: 0;
     font-size: 17px;
 }
-.button-showdown {
+/*dropdown*/
+.button-showdown{
+    position: relative;
+    display: inline-block;
+}
+.button-showdown-header {
     position: absolute;
     right: 20px;
     width: 18px;
     bottom: 22px;
 }
 .showdown-content {
+    min-width: 160px;
+    padding: 12px 16px;
+}
+.showdown-content-menu-tour {
+    min-width: 18%;
+    top: 34px;
+}
+.showdown-content,
+.showdown-content-menu-tour,
+.showdown-content-menu-tour-plus,
+.showdown-content-header {
     display: none;
     position: absolute;
     background-color: #fff;
-    min-width: 190px;
     z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.35);
+}
+.showdown-content-menu-tour-plus {
+    min-width: 900px;
+    left: 206px;
+    top:0;
+}
+.showdown-content-header {
+    min-width: 190px;
     top: 63px;
     left: -1px;
 }
-.showdown-content a {
+.showdown-content a,
+.showdown-content-menu-tour a,
+.showdown-content-header a {
     color: black;
     padding: 9px 16px;
     text-decoration: none;
     display: block;
+}
+.showdown-content-header a {
     border-bottom: 1px solid #4db848;
 }
-.showdown-content img {
+.showdown-content-header img {
     width: 11px;
 }
-.showdown-content a:hover {
+.showdown-content a:hover,
+.showdown-content-menu-tour a:hover,
+.showdown-content-header a:hover {
     background-color: #ddd;
 }
-.header-hotline:hover .showdown-content {
+.tour-item:hover .showdown-content-menu-tour,
+.header-hotline:hover .showdown-content-header,
+.tour-item:hover .showdown-content-menu-tour:hover .showdown-content-menu-tour-plus {
     display: block;
 }
 .header-hotline:hover a:hover{
@@ -404,7 +440,10 @@ section.footer-bottom {
 .header-hotline:hover a:hover b {
     color: white !important;
 }
-
+.btn-showmore {
+    float: right;
+}
+/**/
 .menu-tour {
     display: flex;
     flex-wrap: nowrap;
@@ -417,4 +456,48 @@ section.footer-bottom {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
+}
+
+
+/*** LoginPage ***/
+.main-login {
+    padding: 15vh 0px;
+    height: calc(100vh - 35px);
+    min-height: 600px;
+}
+.title-group-title-login {
+    padding: 15px 0;
+}
+.register-group-title-login a {
+    text-decoration: none;
+}
+.group-title-login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.group-title-login img {
+    max-height: 100px;
+}
+.login-form input {
+    margin: 15px 0;
+    padding: 0 15px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #000;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #dce0e4;
+    background: #fff;
+    font-size: 18px;
+}
+.trans-form {
+    transition: .4s;
+    width: 450px;
+    border-radius: 8px;
+    padding: 5px 50px;
+}
+.signup-form {
+    display: none;
 }
