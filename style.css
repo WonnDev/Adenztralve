@@ -480,24 +480,147 @@ section.footer-bottom {
 .group-title-login img {
     max-height: 100px;
 }
-.login-form input {
+.login-form input,
+.register-form input {
     margin: 15px 0;
     padding: 0 15px;
-    border-radius: 4px;
-    font-weight: 700;
-    color: #000;
-    box-shadow: none;
+    border-radius: 5px;
+    font-weight: 500;
     border: none;
     border-bottom: 1px solid #dce0e4;
     background: #fff;
-    font-size: 18px;
+    font-size: 17px;
+    transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+    outline: none;
 }
 .trans-form {
     transition: .4s;
     width: 450px;
-    border-radius: 8px;
     padding: 5px 50px;
 }
 .signup-form {
     display: none;
 }
+.signin-form {
+    display: flex;
+}
+.signin-form,
+.signup-form {
+    justify-content: flex-end;
+    border-right: 1px solid #333;
+}
+.register-group-title-login {
+    font-size: 25px;
+    display: flex;
+}
+.register-group-title-login a {
+    color: #51cffb;
+}
+.button-login,
+.button-register {
+    color: #51c4f9;
+    border: 1px solid #51c4f9;
+    border-radius: 100px;
+    background: #fff;
+    font-size: 25px;
+    display: block;
+    transition: .3s;
+    line-height: 40px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.remember {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.fb-login img, .gg-login img{
+    width: 23px;
+}
+.fb-login {
+    background: #3b5998;
+}
+.gg-login {
+    background: #db4437 ;
+}
+.social-login a {
+    transition: .3s;
+    margin: 15px 0;
+    line-height: 50px;
+    font-weight: 300;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.social-login {
+    display: flex;
+    flex-direction: column;
+}
+.social-login img {
+    margin: 0 20px;
+    background: #fff;
+}
+.social-login p {
+    color: #444;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+.login-form input:focus,
+.register-form input:focus {
+    outline: none;
+    border-color: #999999;
+    background: #fff;
+    box-shadow: 0 0 5px #999999;
+}
+
+
+/**rep**/
+@media only screen and (max-width:420px) {
+    /* For mobile phones: */
+    body {
+        font-size: 10px;
+    }
+    .navbar-item address {
+        margin-bottom: 5px;
+    }
+    .navbar-item a {
+        font-size: 10px;
+    }
+    .menu-navbar-item {
+        flex-direction: column;
+    }
+    .login {
+        bottom: 0;
+    }
+
+    .sologan-header {
+        display: none;
+    }
+    .header-hotline {
+        right: -25px;
+    }
+    .tour-item a {
+        font-size: 10px;
+    }
+    .tour-item {
+        padding: 0;
+    }
+    .header-group-icon {
+        display: none;
+    }
+    .showdown-content-menu-tour {
+        top: 30px;
+        left: 0;
+    }
+    .showdown-content-menu-tour-plus {
+        left: 85px;
+    }
+    .button-showdown-header {
+        bottom: 15px;
+    }
+    .button-showdown-header {
+        font-size: 16px;
+    }
+  }
