@@ -14,76 +14,78 @@
 <body>
     <section class="page-login">
         <div class="main-login">
-            <div class="container" style="max-width:70rem;">
+            <div class="container" style="max-width:70rem;font-weight: 200;">
                 <div class="row">
                     <div class="group-title-login">
                         <div class="img-group-title-login">
                             <img class="img-fluid" src="img/original.png" alt="">
                         </div>
                         <div class="title-group-title-login">
-                            <h2 id="swaptitlelogin" style="font-weight:600;">Đăng Nhập</h2>
-                            <h2 id="swaptitle" style="font-weight:600;display: none;">Đăng Ký</h2>
+                            <h2 id="swaptitlelogin" class="signin" style="font-weight:600;">Đăng Nhập</h2>
+                            <h2 id="swaptitle" class="signup" style="font-weight:600;display: none;">Đăng Ký</h2>
                         </div>
 
                         <div class="register-group-title-login">
-                            <h4 id="swapcontentlogin">Bạn là người mới?
+                            <h4 id="swapcontentlogin" class="signin">Bạn là người mới?
                             </h4>
-                            <h4 id="swapcontent" style="display: none;">Bạn đã có tài khoản!
+                            <h4 id="swapcontent" class="signup" style="display: none;">Bạn đã có tài khoản!
                             </h4>
                             <img class="img-fluid" style="width: 25px;height: 27px;margin:0 5px 0 15px;"
                                 src="img/add-people-interface-symbol-of-black-person-close-up-with-plus-sign-in-small-circle.png"
                                 alt="">
                             <a id="swapcontentlogin" style="cursor: pointer; color: #51cffb;" onclick="swapform()">
-                                <h4 id="swapbuttonlogin">Đăng Ký</h4>
-                                <h4 id="swapbutton" style="display: none;">Đăng Nhập</h4>
+                                <h4 id="swapformlogin" class="signin">Đăng Ký</h4>
+                                <h4 id="swapform" style="display: none;" class="signup">Đăng Nhập</h4>
                             </a>
 
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 40px;">
-                    <div class="col columns">
-                        <div class="signup-form" id="swapform" style="display: none;">
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col columns" style="justify-content: flex-end;">
+                        <div class="signup-form signup" id="swapform" style="display: none;">
                             <form class="register-form trans-form">
-                                <input type="text" placeholder="Họ tên" style="width: 100%;" value="">
-                                <input type="email" placeholder="Email" style="width: 100%;" value="">
+                                <input type="text" placeholder="Họ tên" value="">
+                                <input type="email" placeholder="Email" value="">
                                 <input type="hidden" name="next">
-                                <input type="password" name="password" placeholder="Mật khẩu" style="width: 100%;"
-                                    value="">
-                                <input type="password" name="repassword" placeholder="Nhập lại khẩu mật khẩu"
-                                    style="width: 100%;" value="">
+                                <input type="password" name="password" placeholder="Mật khẩu" value="">
+                                <input type="password" name="repassword" placeholder="Nhập lại khẩu mật khẩu" value="">
                                 <button type="submit" class="button-register"
                                     onclick="alert('Hệ thống đang trong quá trình hoàn thiện. Bạn vui lòng quay trở lại vào lúc khác. Cảm ơn.')">
                                     Đăng ký</button>
                             </form>
                         </div>
-                        <div class="signin-form" id="swapformlogin" style="display: flex;">
+                        <div class="signin-form signin" id="swapformlogin">
                             <form class="login-form trans-form">
-                                <input type="text" placeholder="Username/Email" value="" style="width: 100%;">
-                                <input type="password" placeholder="Password" value="" style="width: 100%;">
+                                <input type="text" placeholder="Username/Email" value="">
+                                <input type="password" placeholder="Password" value="">
                                 <input type="hidden" name="" id="">
                                 <button type="submit" class="button-login"
                                     onclick="alert('Hệ thống đang trong quá trình hoàn thiện. Bạn vui lòng quay trở lại vào lúc khác. Cảm ơn.')">
                                     Đăng nhập</button>
-                                <label class="remember">
-                                    <span style="color:#333;font-size:18px; font-weight:300;"> <input type="checkbox"
-                                            id="remember" name="remember"> Lưu
-                                        mật khẩu</span>
-                                    <a style="color:#333; font-size: 18px; font-weight: 300; cursor: pointer;">Quên
+                                <div class="remember">
+                                    <label style="color:#333;font-size:18px;margin-bottom: 0;cursor: pointer;">
+                                        <input style="height:auto;width:auto;" type="checkbox" id="remember"
+                                            name="remember"> Lưu
+                                        mật khẩu
+                                    </label>
+                                    <a style="color:#333; font-size: 18px;cursor: pointer;"
+                                        onclick="alert('Quên mật khẩu thì đăng kí mới ngay đi nào!')">Quên
                                         mật khẩu?</a>
-                                </label>
-
+                                </div>
                             </form>
                         </div>
                     </div>
                     <div class="col columns">
                         <div class="trans-form">
                             <div class="social-login">
-                                <a href="" class="fb-login">
+                                <a href="" class="fb-login"
+                                    onclick="alert('Xin lỗi quý khách, hiện tại tính năng này chưa khả dụng.')">
                                     <img class="img-fluid" src="img/facebook.png" alt="" style="border-radius: 4px;">
                                     <span>Đăng nhập bằng Facebook</span>
                                 </a>
-                                <a href="" class="gg-login">
+                                <a href="" class="gg-login"
+                                    onclick="alert('Xin lỗi quý khách, hiện tại tính năng này chưa khả dụng.')">
                                     <img class="img-fluid" src="img/search.png" alt=""
                                         style="border-radius: 100px;padding: 1px;">
                                     <span>Đăng nhập bằng Google</span>
@@ -100,30 +102,43 @@
             </div>
         </div>
     </section>
+
+    <!-- <script>
+        function swapform() {
+            // var x = document.getElementById("swapform"),
+            //     y = document.getElementById("swapformlogin"),
+            //     a = document.getElementById("swaptitle"),
+            //     b = document.getElementById("swaptitlelogin"),
+            //     c = document.getElementById("swapcontent"),
+            //     d = document.getElementById("swapcontentlogin"),
+            //     e = document.getElementById("swapbutton"),
+            //     f = document.getElementById("swapbuttonlogin");
+
+            // if (x.style.display === "none") {
+            //     x.style.display = a.style.display = c.style.display = e.style.display = "block";
+            //     y.style.display = b.style.display = d.style.display = f.style.display = "none";
+            // } else {
+            //     x.style.display = a.style.display = c.style.display = e.style.display = "none";
+            //     y.style.display = b.style.display = d.style.display = f.style.display = "block";
+            // }
+        }
+    </script> -->
     <script>
         function swapform() {
-            var x = document.getElementById("swapform"),
-                y = document.getElementById("swapformlogin"),
-                a = document.getElementById("swaptitle"),
-                b = document.getElementById("swaptitlelogin"),
-                c = document.getElementById("swapcontent"),
-                d = document.getElementById("swapcontentlogin"),
-                e = document.getElementById("swapbutton"),
-                f = document.getElementById("swapbuttonlogin");
-
-            /*if (x.style.display === "none") { */
-            if (document.getElementById("swapbutton").style.display === "none") {
-                x.style.display = "flex";
-                y.style.display = b.style.display = d.style.display = f.style.display = "none";
-                a.style.display = c.style.display = e.style.display = "block";
-            } else {
-                x.style.display = a.style.display = c.style.display = e.style.display = "none";
-                y.style.display = "flex";
-                b.style.display = d.style.display = f.style.display = "block";
+            var x = document.getElementsByClassName("signup"),
+                y = document.getElementsByClassName("signin");
+            for (var i = 0; i < x.length; i++) {
+                if (x[i].style.display === "none") {
+                    x[i].style.display = "block";
+                    y[i].style.display = "none";
+                } else {
+                    x[i].style.display = "none";
+                    y[i].style.display = "block";
+                }
             }
         }
-
     </script>
+
 </body>
 
 </html>

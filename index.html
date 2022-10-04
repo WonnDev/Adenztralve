@@ -8,7 +8,12 @@
     <title>Adenztravel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
 
 
@@ -16,7 +21,7 @@
 </head>
 
 <body>
-    <section class="navibar-top">
+    <section class="navibar-top" id="nav">
         <div class="navbar">
             <div class="container">
                 <div class="row" style="width: 100%;">
@@ -40,9 +45,10 @@
         <div class="container">
             <div class="row" style="align-items: center;flex-wrap: nowrap;width: 100%;">
                 <div class="header-logo">
-                    <img class="img-fluid" src="img/original.png" alt="">
+                    <img class="img-fluid" src="img/original.png" alt="" style="cursor: pointer;"
+                        onclick="(document.documentElement.scrollTop = 0)">
                     <img class="img-fluid sologan-header" src="img/slogan.png" alt="">
-                    <div class="header-hotline">
+                    <button class="header-hotline">
                         <p>Hotline Tư Vấn</p>
                         <b style="color:#4db848">0938.146.xxx</b>
                         <img class="img-fluid button-showdown-header" src="img/up-btn.svg" alt="">
@@ -52,14 +58,14 @@
                             <a> <img class="img-fluid" src="img/phone-ico.png" alt=""> Dịch vụ Visa: <b
                                     style="color:#4db848">0938.148.xxx</b></a>
                         </div>
-                    </div>
+                    </button>
                 </div>
 
             </div>
         </div>
-        <div class="line-clear-section" style="margin: 3px 0;"></div>
+        <div class="line-clear-section" style="margin: 1px 0;"></div>
         <div class="container">
-            <div class="row" style="flex-wrap: nowrap;width: 100%;">
+            <div class="row" style="flex-wrap: nowrap;align-items: center;">
                 <div class="menu-tour">
                     <div class="tour-item">
                         <a>tour nước ngoài</a>
@@ -68,10 +74,10 @@
                             <a>Châu Á <img class="btn-showmore point-one" src="img/next-btn.svg" alt="">
                             </a>
                             <div class="showdown-content-menu-tour-plus">
-                                <a href="">1 2 3</a>
-                                <a href="">4 5 6</a>
-                                <a href="">7 8 9</a>
-                                <a href="">. 0 =</a>
+                                <a href="">1 2 3 /</a>
+                                <a href="">4 5 6 *</a>
+                                <a href="">7 8 9 -</a>
+                                <a href="">0 . = +</a>
                             </div>
                             <a>Châu Mỹ
                                 <img class="btn-showmore" src="img/next-btn.svg" alt="">
@@ -84,13 +90,44 @@
                             </a>
                         </div>
                     </div>
-                    <div class="tour-item">
+                    <div class="tour-item tour-bonus">
                         <a>tour trong nước</a>
-                        <img class="img-fluid" src="img/up-btn.svg" alt="">
+                        <img class="img-fluid button-showdown" src="img/up-btn.svg" alt="">
+                        <div class="showdown-content-menu-tour">
+                            <a>Du Lịch Miền Bắc <img class="btn-showmore point-one" src="img/next-btn.svg" alt="">
+                            </a>
+                            <div class="showdown-content-menu-tour-plus">
+                                <a href="">1 2 3 /</a>
+                                <a href="">4 5 6 *</a>
+                                <a href="">7 8 9 -</a>
+                                <a href="">0 . = +</a>
+                            </div>
+                            <a>Du Lịch Miền Trung
+                                <img class="btn-showmore" src="img/next-btn.svg" alt="">
+                            </a>
+                            <a>Du Lịch Miền Nam
+                                <img class="btn-showmore" src="img/next-btn.svg" alt="">
+                            </a>
+                            <a>Du Lịch Tây Nguyên
+                                <img class="btn-showmore" src="img/next-btn.svg" alt="">
+                            </a>
+                            <a>Du Lịch Biển Đảo
+                                <img class="btn-showmore" src="img/next-btn.svg" alt="">
+                            </a>
+                        </div>
                     </div>
                     <div class="tour-item">
                         <a>du lịch tự túc</a>
                         <img class="img-fluid" src="img/up-btn.svg" alt="">
+                        <div class="showdown-content-menu-tour" style="background-color: #EFEFEF">
+                            <a>Tham Quan Giải Trí</a>
+                            <a>Đặt Khách Sạn</a>
+                            <a>Vé Máy Bay</a>
+                            <a>Vé Xe & Tàu Liên Tỉnh</a>
+                            <a>Tàu & Xe Bus Sân Bay</a>
+                            <a>Ẩm Thực & Nhà Hàng</a>
+                            <a>Sim Card & Thuê Wifi</a>
+                        </div>
                     </div>
                     <div class="tour-item">
                         <a>combo du lịch</a>
@@ -104,8 +141,8 @@
                     <div class="tour-item">
                         <a>liên hệ</a>
                     </div>
-
-                    <div class="header-group-icon">
+                    <div class="header-group-icon"
+                        onclick="alert('Tính năng này tạm thời đang bảo trì, bạn vui lòng thử lại sau.')">
                         <div class="mini-icon facebook">
                             <img class="img-fluid" src="img/icon_facebook.png" alt="">
                         </div>
@@ -120,27 +157,25 @@
                         </div>
                         <div class="line-clear-section"></div>
                     </div>
-
                 </div>
-
             </div>
         </div>
+        <div class="line-clear-section" style="margin: 0;"></div>
+
     </section>
-
-
 
     <section id="top">
         <div class="top-header">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/original (1).jpg" class="w-100" style="height: 100vh;">
+                        <img src="img/original (1).jpg" class="w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/original (2).jpg" class="w-100" style="height: 100vh;">
+                        <img src="img/original (2).jpg" class="w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/original.jpg" class="w-100" style="height: 100vh;">
+                        <img src="img/original.jpg" class="w-100">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -175,7 +210,7 @@
             </div>
         </div>
     </section>
-    <section id="main-hot" style="margin-top: 50px">
+    <section id="main-hot">
         <div class="container">
             <div class="row">
                 <div class="main-product-hot">
@@ -188,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="info-product-group" style="padding:50px 0;">
+                <div class="info-product-group">
                     <div class="item-product">
                         <div class="top-img-group">
                             <div class="scale-img">
@@ -286,7 +321,7 @@
                     </div>
                 </div>
 
-                <div class="info-product-group" style="padding:50px 0;">
+                <div class="info-product-group">
                     <div class="item-product">
                         <div class="top-img-group">
                             <div class="scale-img">
@@ -371,7 +406,7 @@
     </section>
     <div class="line-clear-section"></div>
 
-    <section id="main-remembrance" style="margin-top: 50px">
+    <section id="main-remembrance">
         <div class="container">
             <div class="row">
                 <div class="main-product-remembrance">
@@ -636,8 +671,9 @@
                             </div>
                         </div>
                         <div class="info-product" style="font-size: 16px;background-color: #fff;">
-                            <p>Đảo ngọc du lịch xinh đẹp Đài Loan không chỉ được biết tới như một trong những trung tâm
-                                kinh tế hàng đầu ...</p>
+                            <p>Đài Loan, hòn đảo không chỉ có cảnh trí thiên nhiên thơ mộng mà còn thu
+                                hút du khách bởi sự hiện đại của những trung tâm thương mại, tòa nhà cao tầng và nền ẩm
+                                ...</p>
                         </div>
                     </div>
                 </div>
@@ -979,7 +1015,9 @@
 
 
 
-
+    <span class="btn-go-top">
+        <img src="img/arrowup.png" alt="" onclick="(document.documentElement.scrollTop = 0)">
+    </span>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -995,18 +1033,32 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
         $('.autoplay').slick({
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2500,
-            arrows: false
+            arrows: true,
+            dots: true,
         });
     </script>
 
-
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-36px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 
 </body>
 

@@ -5,6 +5,14 @@ body {
 .container {
     max-width: 1170px;
 }
+#nav {
+    position: sticky;
+    top: 0;
+    transition: top 0.4s;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
 /*top*/
 .top-header {
     position: relative; 
@@ -17,7 +25,7 @@ body {
     left: calc(50vw - 300px);
     top: calc(50% - 700px);
     max-width: calc( 100vw - 100px );
-    z-index: 10;
+    z-index: 3;
 }
 .img-to-bottom img {
     position: absolute;
@@ -55,7 +63,7 @@ body {
     display: flex;
     position: absolute;
     bottom: 20px;
-    z-index: 10;
+    z-index: 5;
 }
 .row .group-searchbar {
     width: calc( 100vw - 400px);
@@ -68,6 +76,12 @@ body {
     left: 10px;
 }
 /*main*/
+.main-product-hot {
+    margin-top: 50px;
+}
+.main-product-remembrance {
+    margin-top: 50px;
+}
 .title-product {
     font-size: 45px;
     text-align: center;
@@ -87,13 +101,22 @@ body {
     font-weight: 400;
     font-size: 14px;
 }
-.more-product P {
-    font-weight: 500;
+.title-product p,
+.more-product p {
+    font-weight: 600;
+}
+.info-product p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.info-product img {
+    width: 14px;
 }
 .info-product-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 15px 0;
 }
 .info-product,
 .top-img-group {
@@ -102,9 +125,6 @@ body {
 }
 .info-product {
     padding: 10px;
-}
-.info-product p {
-    margin-bottom: 0;
 }
 .scale-img {
     overflow: hidden;
@@ -129,7 +149,7 @@ body {
     font-weight: 500;
 }
 .item-product {
-    max-width: 400px;
+    max-width: 350px;
     box-shadow: 2px 4px 6px darkgray;
     margin: 10px;
 }
@@ -137,7 +157,7 @@ body {
     position: absolute;
     color: red;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 18px;
     bottom: 18px;
     right: 10px;
 }
@@ -335,6 +355,7 @@ section.footer-bottom {
     color: white !important;
     font-size: 12px;
     font-weight: 600;
+    text-decoration: none;
 }
 .mail {
     margin-left: 12px;
@@ -365,6 +386,7 @@ section.footer-bottom {
     font-weight: 500;
     right: 10px;
     bottom: 0;
+    background: #fff;
 }
 .header-hotline p {
     margin-bottom: 0;
@@ -388,6 +410,12 @@ section.footer-bottom {
 .showdown-content-menu-tour {
     min-width: 18%;
     top: 34px;
+}
+.tour-bonus .showdown-content-menu-tour {
+    left: 22px;
+}
+.tour-bonus .showdown-content-menu-tour .showdown-content-menu-tour-plus {
+    left: 211px;
 }
 .showdown-content,
 .showdown-content-menu-tour,
@@ -430,6 +458,7 @@ section.footer-bottom {
 }
 .tour-item:hover .showdown-content-menu-tour,
 .header-hotline:hover .showdown-content-header,
+.header-hotline:focus .showdown-content-header,
 .tour-item:hover .showdown-content-menu-tour:hover .showdown-content-menu-tour-plus {
     display: block;
 }
@@ -448,6 +477,7 @@ section.footer-bottom {
     display: flex;
     flex-wrap: nowrap;
     position: relative;
+    align-items: center;
 }
 .tour-item {
     padding:5px 10px;
@@ -456,13 +486,27 @@ section.footer-bottom {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
+}
+.btn-go-top img {
+    width: 22px;
+    height: 45px;
 }
 
-
+.btn-go-top {
+    position: fixed;
+    background: #4db848;
+    bottom: 50px;
+    right: 33px;
+    z-index: 10;
+    border-radius: 100px;
+    border: 2px solid #FFF;
+    padding: 5px;
+    box-shadow: 2px 4px 6px gray;
+}
 /*** LoginPage ***/
 .main-login {
     padding: 15vh 0px;
-    height: calc(100vh - 35px);
     min-height: 600px;
 }
 .title-group-title-login {
@@ -488,25 +532,20 @@ section.footer-bottom {
     font-weight: 500;
     border: none;
     border-bottom: 1px solid #dce0e4;
-    background: #fff;
     font-size: 17px;
     transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
     outline: none;
+}
+.remember a:hover {
+    color: #51c4f9;
 }
 .trans-form {
     transition: .4s;
     width: 450px;
     padding: 5px 50px;
 }
-.signup-form {
-    display: none;
-}
-.signin-form {
-    display: flex;
-}
 .signin-form,
 .signup-form {
-    justify-content: flex-end;
     border-right: 1px solid #333;
 }
 .register-group-title-login {
@@ -529,14 +568,13 @@ section.footer-bottom {
     margin: 15px 0;
     width: 100%;
 }
-
 .remember {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
 .fb-login img, .gg-login img{
-    width: 23px;
+    width: 26px;
 }
 .fb-login {
     background: #3b5998;
@@ -564,7 +602,7 @@ section.footer-bottom {
 .social-login p {
     color: #444;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 1rem;
 }
 .login-form input:focus,
@@ -574,25 +612,42 @@ section.footer-bottom {
     background: #fff;
     box-shadow: 0 0 5px #999999;
 }
+.trans-form input {
+    height: 35px;
+    width: 100%;
+}
+.columns {
+    display: flex;
+    align-items: center;
+}
+h2 {
+    margin-top: 0.5rem;
+}
 
 
 /**rep**/
 @media only screen and (max-width:420px) {
     /* For mobile phones: */
     body {
+        font-family: Helvetica !important;
         font-size: 10px;
     }
     .navbar-item address {
         margin-bottom: 5px;
     }
     .navbar-item a {
-        font-size: 10px;
+        line-height: 1.1;
+    }
+    .navbar-item a,
+    .social-login p {
+        font-size: 11px;
     }
     .menu-navbar-item {
         flex-direction: column;
     }
     .login {
-        bottom: 0;
+        bottom: -3px;
+        right: 15px;
     }
 
     .sologan-header {
@@ -623,4 +678,94 @@ section.footer-bottom {
     .button-showdown-header {
         font-size: 16px;
     }
+    .signin-form, .signup-form {
+        justify-content: center;
+        border: none;
+    }
+    .trans-form {
+        width: 400px;
+    }
+    .group-title-login img {
+        max-height: 80px;
+    }
+    .social-login span {
+        font-size: 12px;
+    }
+    .main-login {
+        padding: 8vh 0;
+    }
+    .img-to-bottom {
+        display: none;
+    }
+    .sologan img {
+        top: -288px;
+        left: 90px;
+        max-width: 250px;
+        z-index: 1;
+    }
+    .group-searchbar {
+        display: none;
+    }
+    .title-product p {
+        font-size: 25px;
+    }
+    .more-product p {
+        font-size: 10px;
+    }
+    .main-product-hot {
+        margin-top: 30px;
+    }
+    .info-product-group {
+        padding: 15px 0;
+    }
+    .line-clear-section {
+        margin: 15px 0;
+    }
+    .main-product-remembrance {
+        margin-top: 15px;
+    }
+    .profile-customer span {
+        bottom: 5px;
+    }
+    .profile-customer img {
+        width: 12px;
+    }
+    .info-product p {
+        font-size: 13px;
+    }
+    .widget-group {
+        flex-wrap: wrap;
+    }
+    .footer-group-service a, .footer-group-help a {
+        font-size: 14px;
+    }
+    .footer-group-service p, .footer-group-help p,
+    .footer-logo-content p {
+        font-size: 10px;
+    }
+    .footer-bottom p {
+        line-height: 1;
+    }
+    .image-bocongthuong img {
+        width: 150px;
+    }
+    .get-iframe {
+        display: none;
+    }
+    .showdown-content-menu-tour-plus {
+        min-width: 336px;
+    }
+    .btn-go-top img {
+        width: 20px;
+        height: 40px;
+    }
+    .btn-go-top {
+        right: 15px;
+        bottom: 50px;
+    }
+    .footer-group-info {
+        display:none;
+    }
+    
   }
+
