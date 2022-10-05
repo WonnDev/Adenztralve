@@ -1,6 +1,6 @@
 /** Index **/
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 .container {
     max-width: 1170px;
@@ -769,3 +769,235 @@ h2 {
     
   }
 
+/*** PRODUCT ***/
+body{
+    font-weight: 400;
+}
+.row {
+    max-width: 1170px;
+}
+.info {
+    padding-top: 50px;
+}
+.support-customer,
+.temp {
+    padding: 20px;
+    border: 1px solid red;
+    margin: 20px 10px;
+}
+.title-support-customer,
+.title-temp {
+    display: flex;
+    flex-direction: column;
+}
+.title-support-customer p,
+.title-temp p {
+    text-transform: uppercase;
+    color: red;
+    border-bottom: 1px solid #dddddd ;
+    font-weight: bold;
+    text-align: center;
+}
+.title-support-customer a,
+.title-temp a {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    color: #303030 !important;
+}
+.title-temp a img{
+    width: 15px;
+}
+.product-other,
+.info-list-tour {
+    border: 1px solid #4db848;
+    padding: 0;
+    margin: 20px 10px;
+}
+.product-other-title,
+.title-info-list-tour {
+    background: #4db848;
+}
+.product-other-title p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    margin:0;
+    text-align: center;
+    padding: 3px;
+}
+.product-other .info-product-group .info-product span {
+    position: unset;
+    float: right;
+    margin-top: 10px;
+}
+.product-other .info-product-group .info-product .info-tour-name a {
+    color: #4db848;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.info-tour-name {
+    padding: 12px 0;
+}
+.info-info-tour p {
+    margin-bottom: 0.5rem;
+}
+.info-info-tour {
+    margin: 20px 0;
+}
+.title-info-list-tour a {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.title-info-list-tour,
+.item-info {
+    display: flex;
+    justify-content: space-around;
+}
+.item-info {
+    margin: 10px 5px;
+    align-items: center;
+    font-weight: 700;
+    border-bottom: 1px solid #eeeeee ;
+    padding: 5px 0;
+}
+.item-info label {
+    background: #4db848;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 13px;
+    position: relative;
+    left: 17px;
+    bottom: 7px;
+    cursor: pointer;
+}
+.item-info label p {
+    margin-bottom: 0.5rem;
+}
+.more-time-to-start {
+    color: white;
+    background: #4db848;
+    padding: 4px 25px;
+    text-align: center;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: -1px;
+    cursor: pointer;
+}
+.discount img {
+    width: 15px;
+}
+.discount h2 {
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+.discount {
+    text-align: center;
+    padding: 20px 0px;
+    background: #f5f5f5;
+    margin: 15px 0;
+}
+.button-like img {
+    max-width: 15px;
+    position: absolute;
+    left: 7px;
+    bottom: 8px;
+}
+.button-like {
+    font-size: 13px;
+    background: #3b5998;
+    padding: 7px 10px 7px 22px;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+}
+.button-like a {
+    margin-left: 2px;
+}
+.info-description {
+    margin: 30px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.info-description-title,
+.info-description-detail {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+.info-description-title {
+    font-size: 36px;
+    color: #009900;
+}
+.info-description-detail {
+    font-size: 26px;
+    color: #e74c3c;
+}
+.info-description ul {
+    list-style: none;
+    font-weight: bold;
+}
+.info-description ul b {
+    color: #008F00;
+}
+/* CREATE TABS*/
+.tab {
+    overflow: hidden;
+    background-color: #fff;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 20px;
+    transition: 0.4s;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #4db848;
+    color: white;
+    font-weight: bold;
+}
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+  /* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.button-close {
+    float: right;
+    cursor: pointer;
+    font-size: 26px;
+}
+.button-close:hover {
+    color: red;
+}
+/*end tabs*/
+
+.listtab-description {
+    border-bottom: 2px solid #4db848;
+}
+.tabcontent h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #009900;
+    margin: 20px 0;
+}
