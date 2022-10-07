@@ -624,152 +624,7 @@ h2 {
     margin-top: 0.5rem;
 }
 
-
-/**rep**/
-@media only screen and (max-width:420px) {
-    /* For mobile phones: */
-    body {
-        font-family: Helvetica !important;
-        font-size: 10px;
-    }
-    .navbar-item address {
-        margin-bottom: 5px;
-    }
-    .navbar-item a {
-        line-height: 1.1;
-    }
-    .navbar-item a,
-    .social-login p {
-        font-size: 11px;
-    }
-    .menu-navbar-item {
-        flex-direction: column;
-    }
-    .login {
-        bottom: -3px;
-        right: 15px;
-    }
-
-    .sologan-header {
-        display: none;
-    }
-    .header-hotline {
-        right: -25px;
-    }
-    .tour-item a {
-        font-size: 10px;
-    }
-    .tour-item {
-        padding: 0;
-    }
-    .header-group-icon {
-        display: none;
-    }
-    .showdown-content-menu-tour {
-        top: 30px;
-        left: 0;
-    }
-    .showdown-content-menu-tour-plus {
-        left: 85px;
-    }
-    .button-showdown-header {
-        bottom: 15px;
-    }
-    .button-showdown-header {
-        font-size: 16px;
-    }
-    .signin-form, .signup-form {
-        justify-content: center;
-        border: none;
-    }
-    .trans-form {
-        width: 400px;
-    }
-    .group-title-login img {
-        max-height: 80px;
-    }
-    .social-login span {
-        font-size: 12px;
-    }
-    .main-login {
-        padding: 8vh 0;
-    }
-    .img-to-bottom {
-        display: none;
-    }
-    .sologan img {
-        top: -288px;
-        left: 90px;
-        max-width: 250px;
-        z-index: 1;
-    }
-    .group-searchbar {
-        display: none;
-    }
-    .title-product p {
-        font-size: 25px;
-    }
-    .more-product p {
-        font-size: 10px;
-    }
-    .main-product-hot {
-        margin-top: 30px;
-    }
-    .info-product-group {
-        padding: 15px 0;
-    }
-    .line-clear-section {
-        margin: 15px 0;
-    }
-    .main-product-remembrance {
-        margin-top: 15px;
-    }
-    .profile-customer span {
-        bottom: 5px;
-    }
-    .profile-customer img {
-        width: 12px;
-    }
-    .info-product p {
-        font-size: 13px;
-    }
-    .widget-group {
-        flex-wrap: wrap;
-    }
-    .footer-group-service a, .footer-group-help a {
-        font-size: 14px;
-    }
-    .footer-group-service p, .footer-group-help p,
-    .footer-logo-content p {
-        font-size: 10px;
-    }
-    .footer-bottom p {
-        line-height: 1;
-    }
-    .image-bocongthuong img {
-        width: 150px;
-    }
-    .get-iframe {
-        display: none;
-    }
-    .showdown-content-menu-tour-plus {
-        min-width: 336px;
-    }
-    .btn-go-top img {
-        width: 20px;
-        height: 40px;
-    }
-    .btn-go-top {
-        right: 15px;
-        bottom: 50px;
-    }
-    .footer-group-info {
-        display:none;
-    }
-    
-  }
-
-/*** PRODUCT ***/
+/******** PRODUCT ********/
 body{
     font-weight: 400;
 }
@@ -817,6 +672,7 @@ body{
 .title-info-list-tour {
     background: #4db848;
 }
+
 .product-other-title p {
     color: white;
     text-transform: uppercase;
@@ -1001,3 +857,363 @@ body{
     color: #009900;
     margin: 20px 0;
 }
+.title-feedback,
+.button-login-feedback,
+.btn-getmore-feedback {
+    color: white;
+    background: #4DB848;
+}
+.title-feedback {
+    text-transform: uppercase;
+    padding: 8px;
+    margin: 40px 0 30px 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+.button-login-feedback {
+    padding: 11px 22px;
+}
+.button-login-feedback,
+.btn-getmore-feedback {
+    border-radius: 50px;
+    box-shadow: 2px 4px 6px #444;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.box-feedback {
+    border: 1px solid #eeeeee;
+    font-size: 15px;
+}
+.btn-getmore-feedback {
+    margin: 15px;
+    text-align: center;
+    padding: 8px 16px;
+}
+.box-comment {
+    text-transform: uppercase;
+    padding: 8px;
+    font-weight: 600;
+}
+.item-product .top-img-group,
+.info-tour-name a {
+    cursor: pointer;
+}
+
+/**** Contact ****/
+.index-contact-hotline p,
+.index-contact-email p,
+.index-contact-sky p,
+.index-contact-address p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.index-contact-hotline h6,
+.index-contact-email h6,
+.index-contact-sky h6,
+.index-contact-address h6 {
+    font-weight: bold;
+}
+.img-contact-hotline img,
+.img-contact-email img,
+.img-contact-sky img,
+.img-contact-address img {
+    width: 75px;
+}
+.img-contact-hotline,
+.img-contact-sky,
+.img-contact-email,
+.img-contact-address {
+    padding-right: 30px;
+}
+.contact-hotline,
+.contact-email,
+.contact-sky,
+.contact-address {
+    display: flex;
+    padding: 10px 0;
+}
+section.contact input,
+section.contact textarea {
+    background: #f9f9f9;
+    border: 1px solid #C4C4C4;
+    width: 100%;
+    margin: 12px 0;
+    font-size: 14px;
+    color: #222222;
+    padding: 5px 15px;
+    outline: 0;
+}
+section.contact label {
+    display: inline-block;
+    margin: 0.5rem;
+}
+.combo-input {
+    display: flex;
+    flex-direction: column; 
+}
+.combo-input p {
+    color: white;
+    background: #4DB848;
+    padding: 7px 12px;
+    text-align: center;
+    width: 22%;
+    margin-left: auto;
+}
+/****************** about *******************/
+.item-news-mini {
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #dddddd;
+}
+.img-news-mini img {
+    width: 60px;
+}
+.index-news-mini {
+    padding: 0px 12px;
+    color: #303030;
+}
+.index-news-mini p {
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+.span-date {
+    font-size: 10px;
+    color: #d3d3d3;
+}
+
+
+/**reponsive**/
+@media only screen and (max-width:420px) {
+    /* For mobile phones: */
+    body {
+        font-family: Helvetica !important;
+        font-size: 10px;
+    }
+    .navbar-item address {
+        margin-bottom: 5px;
+    }
+    .navbar-item a {
+        line-height: 1.1;
+    }
+    .navbar-item a,
+    .social-login p {
+        font-size: 11px;
+    }
+    .menu-navbar-item {
+        flex-direction: column;
+    }
+    .login {
+        bottom: -3px;
+        right: 15px;
+    }
+
+    .sologan-header {
+        display: none;
+    }
+    .header-hotline {
+        right: -25px;
+    }
+    .tour-item a {
+        font-size: 10px;
+    }
+    .tour-item {
+        padding: 0;
+    }
+    .header-group-icon {
+        display: none;
+    }
+    .showdown-content-menu-tour {
+        top: 30px;
+        left: 0;
+    }
+    .showdown-content-menu-tour-plus {
+        left: 85px;
+    }
+    .button-showdown-header {
+        bottom: 15px;
+    }
+    .button-showdown-header {
+        font-size: 16px;
+    }
+    .signin-form, .signup-form {
+        justify-content: center;
+        border: none;
+    }
+    .trans-form {
+        width: 400px;
+    }
+    .group-title-login img {
+        max-height: 80px;
+    }
+    .social-login span {
+        font-size: 12px;
+    }
+    .main-login {
+        padding: 8vh 0;
+    }
+    .img-to-bottom {
+        display: none;
+    }
+    .sologan img {
+        top: -288px;
+        left: 90px;
+        max-width: 250px;
+        z-index: 1;
+    }
+    .group-searchbar {
+        display: none;
+    }
+    .title-product p {
+        font-size: 25px;
+    }
+    .more-product p {
+        font-size: 10px;
+    }
+    .main-product-hot {
+        margin-top: 30px;
+    }
+    .info-product-group {
+        padding: 15px 0;
+    }
+    .line-clear-section {
+        margin: 15px 0;
+    }
+    .main-product-remembrance {
+        margin-top: 15px;
+    }
+    .profile-customer span {
+        bottom: 5px;
+    }
+    .profile-customer img {
+        width: 12px;
+    }
+    .info-product p {
+        font-size: 10px;
+    }
+    .widget-group {
+        flex-wrap: wrap;
+    }
+    .footer-group-service a, .footer-group-help a {
+        font-size: 14px;
+    }
+    .footer-group-service p, .footer-group-help p,
+    .footer-logo-content p {
+        font-size: 10px;
+    }
+    .footer-bottom p {
+        line-height: 1;
+    }
+    .image-bocongthuong img {
+        width: 150px;
+    }
+    .get-iframe {
+        display: none;
+    }
+    .showdown-content-menu-tour-plus {
+        min-width: 336px;
+    }
+    .btn-go-top img {
+        width: 20px;
+        height: 40px;
+    }
+    .btn-go-top {
+        right: 15px;
+        bottom: 50px;
+    }
+    .footer-group-info {
+        display:none;
+    }
+
+    /*PRODUCT*/
+   
+    .more-time-to-start {
+        font-size: 8px;
+    }
+    .item-info label {
+        padding: 2px;
+        position: unset;
+        font-size: 6px;
+    }
+    .support-customer, .temp {
+        padding: 10px;
+        margin: 10px 5px;
+    }
+    .product-other {
+        margin: 10px 5px;
+    }
+    .title-support-customer a, .title-temp a,
+    .title-support-customer p, .title-temp p {
+        font-size: 9px;
+    }
+    .form-info-customer {
+        display: none;
+    }
+    .item-info p {
+        font-size: 9px !important;
+    }
+    .discount h2 {
+        font-size: 13px;
+    }
+    .button-like {
+        font-size: 9px;
+    }
+    .button-like img {
+        bottom:6px;
+    }
+    .info-description-title {
+        font-size: 23px;
+    }
+    .info-description-title,
+    .info-description-detail {
+        margin-bottom: 0.3rem;
+    }
+    .info-description-detail {
+        font-size: 12px;
+    }
+    .title-temp a img {
+        width: 10px;
+    }
+    .item-info label p {
+        margin-bottom: 0.2rem;
+    }
+    .info-description {
+        margin: 10px 0;
+    }
+    .discount,
+    .info-product-group {
+        padding: 10px 0;
+    }
+    .listtab-description {
+        border-bottom: 1px solid #4db848;
+    }
+    .tabcontent h4 {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    .title-feedback {
+        font-size: 12px;
+    }
+    .info-product,
+    .info-tour-name {
+        padding: 5px;
+    }
+    .product-other .info-product-group .info-product .info-tour-name a,
+    .box-feedback {
+        font-size: 10px;
+    }
+    .info-product span {
+        font-size: 12px;
+    }
+    .content-tour ul {
+        padding-left: 0.5rem;
+    }
+    .product-other .info-product-group .info-product span {
+        margin:5px;
+    }
+
+  }
+
