@@ -984,6 +984,105 @@ section.contact label {
     font-size: 10px;
     color: #d3d3d3;
 }
+.about-start p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about-start h2 {
+    margin-top: 30px;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    font-weight: bold;
+}
+.div-suggest a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.div-suggest a:hover {
+    color: #4DB848;
+}
+.div-suggest img {
+    width: 14px;
+    margin-bottom: 3px;
+}
+.div-suggest {
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #4DB848;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+.title-index-about {
+    font-size: 26px;
+    font-weight: bold;
+}
+.index-about ul {
+    list-style: none;
+    padding-left: 0;
+}
+.index-about ol {
+    line-height: 2;
+}
+.album-img-about img {
+    max-width: 100%;
+    padding: 10px;
+    background: #E6F9E1;
+    margin: 5px 0;
+}
+.form-seclect-style {
+    display: inline;
+    font-size: 13px;
+    padding: 5px 20px 5px 5px;
+    border-radius: 0;
+    background-position: right 0.25rem center;
+    background-size: 10px 10px;
+    width: auto;
+    background-color: #f9f9f9;
+}
+.box-comment p {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.box-show-comment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.user-comment {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 15px 0;
+    display: flex;
+}
+.div-comment {
+    width: 100%;
+    padding: 0 15px;
+}
+.div-comment textarea {
+    width: 100%;
+    outline: 0;
+}
+.img-user-comment img {
+    max-width: 100%;
+}
+.text-under-comment-box img {
+    width: 15px;
+}
+.text-under-comment-box a {
+    font-size: 11px;
+    color: #385898 !important;
+}
+.text-under-comment-box a:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+
 
 
 /**reponsive**/
@@ -1214,6 +1313,50 @@ section.contact label {
     .product-other .info-product-group .info-product span {
         margin:5px;
     }
-
+    .about-start h2 {
+        font-size: 13px;
+    }
+    .about-start p {
+        margin-bottom: 0.2rem;
+    }
+    .div-suggest {
+        padding: 7px;
+        margin-bottom: 0.2rem;
+    }
+    .div-suggest a {
+        font-size: 9px;
+    }
+    .title-index-about {
+        font-size: 13px;
+        margin-bottom: 0.2rem;
+    }
+    .index-about ul {
+        margin-bottom: 0.2rem;
+    }
+    .form-seclect-style,
+    .text-under-comment-box a {
+        font-size: 9px;
+    }
+    .box-show-comment {
+        margin-bottom: 0.3rem;
+    }
+    .item-news-mini {
+        flex-direction: column;
+    }
+    .product-other-title p {
+        font-size: 10px;
+    }
+    .index-news-mini {
+        padding: 0 5px;
+    }
+    .index-news-mini p {
+        font-size: 11px;
+    }
+    .index-about ol {
+        line-height: 1.5;
+    }
+    .col-9 {
+        width: 70%;
+    }
   }
 
