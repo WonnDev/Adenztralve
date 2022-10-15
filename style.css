@@ -32,7 +32,7 @@ body {
     bottom: 100px;
     left: calc(50vw - 25px);
     width: 60px;
-    z-index: 10;
+    z-index: 5;
 }
 .item-search input {
     width: 100%;
@@ -392,6 +392,19 @@ section.footer-bottom {
     margin-bottom: 0;
     font-size: 17px;
 }
+/**mega navbar**/
+.showdown-content-menu-tour-plus-asian p,
+.showdown-content-menu-tour-plus-america p,
+.showdown-content-menu-tour-plus-europe p,
+.showdown-content-menu-tour-plus-australia p {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+
 /*dropdown*/
 .button-showdown{
     position: relative;
@@ -410,24 +423,37 @@ section.footer-bottom {
 .showdown-content-menu-tour {
     min-width: 18%;
     top: 34px;
+    height: 295px;
 }
 .tour-bonus .showdown-content-menu-tour {
     left: 22px;
 }
-.tour-bonus .showdown-content-menu-tour .showdown-content-menu-tour-plus {
-    left: 211px;
+.tour-bonus .showdown-content-menu-tour .showdown-content-menu-tour-plus,
+.showdown-content-menu-tour .showdown-content-menu-tour-plus-asian,
+.showdown-content-menu-tour .showdown-content-menu-tour-plus-america,
+.showdown-content-menu-tour .showdown-content-menu-tour-plus-europe,
+.showdown-content-menu-tour .showdown-content-menu-tour-plus-australia {
+    left: 210px;
 }
 .showdown-content,
 .showdown-content-menu-tour,
 .showdown-content-menu-tour-plus,
+.showdown-content-menu-tour-plus-asian,
+.showdown-content-menu-tour-plus-america,
+.showdown-content-menu-tour-plus-europe,
+.showdown-content-menu-tour-plus-australia,
 .showdown-content-header {
     display: none;
     position: absolute;
     background-color: #fff;
     z-index: 2;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.35);
+    box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.35);
 }
-.showdown-content-menu-tour-plus {
+.showdown-content-menu-tour-plus,
+.showdown-content-menu-tour-plus-asian,
+.showdown-content-menu-tour-plus-america,
+.showdown-content-menu-tour-plus-europe,
+.showdown-content-menu-tour-plus-australia {
     min-width: 900px;
     left: 206px;
     top:0;
@@ -627,11 +653,11 @@ h2 {
 }
 
 /******** PRODUCT ********/
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
 body{
     font-weight: 400;
-}
-.row {
-    max-width: 1170px;
 }
 .info {
     padding-top: 50px;
